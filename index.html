@@ -1,332 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yamaha R1 — Active Listings</title>
 <meta name="description" content="Daily-updated overview of active Marktplaats listings for Yamaha R1 motorcycles, 2015 or newer with under 30,000 km, across the Netherlands.">
 <style>
 :root { color-scheme: only light; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { background: #fafaf9; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #1c1917; line-height: 1.5; padding: 28px 20px;
-}
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1c1917; line-height: 1.5; padding: 28px 20px; }
 .wrap { max-width: 1180px; margin: 0 auto; }
-
-header h1 {
-  font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #0c0a09;
-}
+header h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #0c0a09; }
 .criteria { color: #57534e; font-size: 13.5px; margin-top: 4px; }
-
-.metabar {
-  display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: baseline;
-  margin: 18px 0 22px; padding-bottom: 14px; border-bottom: 1px solid #e7e5e4;
-}
+.metabar { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: baseline; margin: 18px 0 22px; padding-bottom: 14px; border-bottom: 1px solid #e7e5e4; }
 .count { font-size: 14px; font-weight: 600; color: #1c1917; }
 .count .num { color: #b91c1c; }
-.sortpill {
-  font-size: 12px; font-weight: 600; background: #fef3c7; color: #92400e;
-  border: 1px solid #fde68a; padding: 3px 10px; border-radius: 999px;
-}
+.sortpill { font-size: 12px; font-weight: 600; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 3px 10px; border-radius: 999px; }
 .updated { font-size: 12.5px; color: #78716c; margin-left: auto; }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  gap: 18px;
-}
-
-.card {
-  background: #ffffff;
-  border: 1px solid #e7e5e4;
-  border-radius: 14px;
-  overflow: hidden;
-  display: flex; flex-direction: column;
-  text-decoration: none;
-  color: inherit;
-  box-shadow: 0 1px 2px rgba(28, 25, 23, 0.04);
-  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.15s ease;
-}
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(28, 25, 23, 0.10);
-  border-color: #d6d3d1;
-}
-
-.imgwrap {
-  width: 100%; aspect-ratio: 4 / 3;
-  background: #f5f5f4; position: relative; overflow: hidden;
-}
-.imgwrap img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
-}
-.yearbadge {
-  position: absolute; top: 10px; left: 10px;
-  font-size: 11.5px; font-weight: 700; letter-spacing: .04em;
-  background: rgba(12, 10, 9, 0.88);
-  color: #ffffff;
-  padding: 4px 10px; border-radius: 6px;
-  backdrop-filter: blur(4px);
-}
-
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 18px; }
+.card { background: #ffffff; border: 1px solid #e7e5e4; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; color: inherit; box-shadow: 0 1px 2px rgba(28,25,23,0.04); transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.15s ease; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(28,25,23,0.10); border-color: #d6d3d1; }
+.imgwrap { width: 100%; aspect-ratio: 4/3; background: #f5f5f4; position: relative; overflow: hidden; }
+.imgwrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.yearbadge { position: absolute; top: 10px; left: 10px; font-size: 11.5px; font-weight: 700; letter-spacing: .04em; background: rgba(12,10,9,0.88); color: #fff; padding: 4px 10px; border-radius: 6px; }
 .body { padding: 14px 16px 16px; display: flex; flex-direction: column; flex-grow: 1; }
-
-.title {
-  font-size: 15px;
-  font-weight: 600;
-  color: #1c1917;
-  margin-bottom: 8px;
-  line-height: 1.35;
-}
-
-.price {
-  font-size: 22px;
-  font-weight: 700;
-  color: #b91c1c;
-  margin-bottom: 12px;
-  letter-spacing: -0.01em;
-}
-.price.offer {
-  font-size: 16px;
-  color: #b45309;
-  font-weight: 600;
-}
-
+.title { font-size: 15px; font-weight: 600; color: #1c1917; margin-bottom: 8px; line-height: 1.35; }
+.price { font-size: 22px; font-weight: 700; color: #b91c1c; margin-bottom: 12px; letter-spacing: -0.01em; }
+.price.offer { font-size: 16px; color: #b45309; font-weight: 600; }
 .specs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
-.chip {
-  font-size: 11.5px;
-  background: #f5f5f4;
-  border: 1px solid #e7e5e4;
-  padding: 3px 9px;
-  border-radius: 999px;
-  color: #44403c;
-  font-weight: 500;
-}
+.chip { font-size: 11.5px; background: #f5f5f4; border: 1px solid #e7e5e4; padding: 3px 9px; border-radius: 999px; color: #44403c; font-weight: 500; }
 .chip.km { font-weight: 600; color: #1c1917; }
-.chip.note {
-  background: #fef9c3;
-  border-color: #fde68a;
-  color: #854d0e;
-}
-.note {
-  font-size: 12.5px;
-  color: #78716c;
-  margin-bottom: 14px;
-  min-height: 16px;
-  line-height: 1.45;
-}
-
-.link {
-  margin-top: auto;
-  text-align: center;
-  background: #0c0a09;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 10px 12px;
-  border-radius: 8px;
-  letter-spacing: 0.01em;
-}
+.chip.note { background: #fef9c3; border-color: #fde68a; color: #854d0e; }
+.note { font-size: 12.5px; color: #78716c; margin-bottom: 14px; min-height: 16px; line-height: 1.45; }
+.link { margin-top: auto; text-align: center; background: #0c0a09; color: #fff; font-size: 13px; font-weight: 600; padding: 10px 12px; border-radius: 8px; }
 .card:hover .link { background: #b91c1c; }
-
-footer {
-  margin-top: 32px;
-  font-size: 12px;
-  color: #78716c;
-  text-align: center;
-  line-height: 1.6;
-}
+footer { margin-top: 32px; font-size: 12px; color: #78716c; text-align: center; line-height: 1.6; }
 footer a { color: #57534e; }
-</style>
-</head>
-<body>
+</style></head><body>
 <div class="wrap">
-  <header>
-    <h1>Yamaha R1 &mdash; Active listings</h1>
-    <div class="criteria">2015 or newer &middot; under 30,000 km &middot; all of the Netherlands &middot; source: Marktplaats</div>
-  </header>
-
-  <div class="metabar">
-    <div class="count"><span class="num" id="count">15</span> matching listings</div>
-    <div class="sortpill">Sorted: cheapest first</div>
-    <div class="updated">Last updated: 28 May 2026, 19:45</div>
-  </div>
-
-  <div class="grid" id="grid">
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2388721539-yamaha-yzf-r1-bj-2017" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2017 Yamaha YZF-R1" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/950399cf-c6ed-4698-a1a8-9c9cf3731f57?rule=ecg_mp_eps$_83"><div class="yearbadge">2017</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1</div>
-        <div class="price">&euro; 15.750</div>
-        <div class="specs"><span class="chip km">29,156 km</span></div>
-        <div class="note">Near the 30,000 km limit.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2395103330-yamaha-yzf-r1-superstrak-akra-bj-2015" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2015 Yamaha YZF-R1 Akrapovic" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/3fc86eb0-0712-4e16-8526-80c8cbbc343c?rule=ecg_mp_eps$_83"><div class="yearbadge">2015</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1 &mdash; Akrapovi&#269;</div>
-        <div class="price">&euro; 15.950</div>
-        <div class="specs"><span class="chip km">29,900 km</span></div>
-        <div class="note">Cheapest match at this kilometer band.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2393015933-yamaha-yzf-r1-2020" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2020 Yamaha YZF-R1" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/ed8abac4-4f86-47c7-857f-4c2dc3fbfd6b?rule=ecg_mp_eps$_83"><div class="yearbadge">2020</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1</div>
-        <div class="price">&euro; 17.500</div>
-        <div class="specs"><span class="chip km">20,200 km</span></div>
-        <div class="note"></div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2353040485-yamaha-r1-yzf-r1-rn49-2019-kenteken-circuit-10000km" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2019 Yamaha R1 RN49 circuit" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/86df1d90-20d2-43f0-aaef-3ff64dd122cd?rule=ecg_mp_eps$_83"><div class="yearbadge">2019</div></div>
-      <div class="body">
-        <div class="title">Yamaha R1 RN49</div>
-        <div class="price">&euro; 17.900</div>
-        <div class="specs"><span class="chip km">10,288 km</span><span class="chip note">Circuit-registered</span></div>
-        <div class="note">Listed as &ldquo;kenteken circuit&rdquo; &mdash; check road registration.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2399979864-yamaha-yzf-r1" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2019 Yamaha YZF-R1" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/fc794c26-0d10-4faf-b47e-1b1ca5e5ad7b?rule=ecg_mp_eps$_83"><div class="yearbadge">2019</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1</div>
-        <div class="price">&euro; 18.995</div>
-        <div class="specs"><span class="chip km">14,515 km</span></div>
-        <div class="note">LDK Automotive &middot; Almere &middot; 200 hp.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2396373435-yamaha-yzf-1000-r-bj-2020-3-612-km" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2020 Yamaha YZF-R1" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d0bf56f2-eb6f-4719-a6bf-ccd12fb46619?rule=ecg_mp_eps$_83"><div class="yearbadge">2020</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1</div>
-        <div class="price">&euro; 19.950</div>
-        <div class="specs"><span class="chip km">3,612 km</span></div>
-        <div class="note">Suur Motoren &middot; Oud-Beijerland &middot; 200 pk, crossplane.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2396832265-yamaha-yzf-r1-bj-2021-17-700-km-1e-eigenaar" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2021 Yamaha YZF-R1" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/3b0ec373-d404-4ee4-ade1-85d1d0605a10?rule=ecg_mp_eps$_83"><div class="yearbadge">2021</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1 &mdash; 1st owner</div>
-        <div class="price">&euro; 19.985</div>
-        <div class="specs"><span class="chip km">17,700 km</span></div>
-        <div class="note"></div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2398736968-yamaha-yzf-r1m-r1-m-blipper-akrapovic-ohlins-r6-r7-r9" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2015 Yamaha YZF-R1M" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/7c55688c-e981-465c-bc6c-103134c1cd53?rule=ecg_mp_eps$_83"><div class="yearbadge">2015</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1M</div>
-        <div class="price">&euro; 19.988</div>
-        <div class="specs"><span class="chip km">22,337 km</span><span class="chip note">R1M variant</span></div>
-        <div class="note">T.D.K. Exclusive &middot; Tilburg &middot; &Ouml;hlins ERS, Akrapovi&#269;.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2398748757-yamaha-yzf-r1-bj-2019" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2019 Yamaha YZF-R1" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c760396e-67b3-423a-a799-409f58053fb2?rule=ecg_mp_eps$_83"><div class="yearbadge">2019</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1</div>
-        <div class="price">&euro; 19.990</div>
-        <div class="specs"><span class="chip km">3,242 km</span></div>
-        <div class="note">Warranty stated through 2030.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2398172694-yamaha-r1-2024-21dkm" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2024 Yamaha R1" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/4b66bc5b-4cfe-475b-9e91-f9d988d843d9?rule=ecg_mp_eps$_83"><div class="yearbadge">2024</div></div>
-      <div class="body">
-        <div class="title">Yamaha R1</div>
-        <div class="price">&euro; 20.499</div>
-        <div class="specs"><span class="chip km">21,000 km</span></div>
-        <div class="note">Dealer listing, immediately available.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2396532668-yamaha-yzf-r1-2024" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2024 Yamaha YZF-R1" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/f69e1705-8911-4a71-9a17-f267d66568fb?rule=ecg_mp_eps$_83"><div class="yearbadge">2024</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1</div>
-        <div class="price">&euro; 21.499</div>
-        <div class="specs"><span class="chip km">7,026 km</span></div>
-        <div class="note">Lowest mileage among the 2024s.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2395936381-yamaha-yzf-r1-60th-anniversary-bj-2024" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2024 Yamaha YZF-R1 60th Anniversary" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/77eda28e-0b41-4832-9e52-1cb7ce3a76d7?rule=ecg_mp_eps$_83"><div class="yearbadge">2024</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1 60th Anniversary</div>
-        <div class="price">&euro; 22.990</div>
-        <div class="specs"><span class="chip km">11,633 km</span><span class="chip note">Anniversary edition</span></div>
-        <div class="note"></div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2403152319-yamaha-r1-60th-anniversary" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2025 Yamaha R1 60th Anniversary" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/b7fb0d89-f7f1-4b17-a3ad-25ec6d7c2a18?rule=ecg_mp_eps$_83"><div class="yearbadge">2025</div></div>
-      <div class="body">
-        <div class="title">Yamaha R1 60th Anniversary</div>
-        <div class="price">&euro; 24.895</div>
-        <div class="specs"><span class="chip km">25 km</span><span class="chip note">Anniversary edition</span></div>
-        <div class="note">DvH Automotive &middot; Dirksland.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2395792378-yamaha-r1-1ste-eig-nl-motor-garantie-t-m-2030" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2025 Yamaha R1 1st owner" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/29ffa46a-e122-4677-b15b-ef3f021cd473?rule=ecg_mp_eps$_83"><div class="yearbadge">2025</div></div>
-      <div class="body">
-        <div class="title">Yamaha R1 &mdash; 1st owner, NL bike</div>
-        <div class="price offer">Bidding / offers</div>
-        <div class="specs"><span class="chip km">5,993 km</span></div>
-        <div class="note">Warranty stated through 2030. Price shown as &ldquo;Bieden&rdquo;.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-    <a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2395665714-yamaha-yzf-r1-60th-anniversary-bj-2025" target="_blank" rel="noopener">
-      <div class="imgwrap"><img loading="lazy" alt="2025 Yamaha YZF-R1 60th Anniversary" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d3/d395a1a4-8947-4422-bcb6-b8746f4d6e0a?rule=ecg_mp_eps$_83"><div class="yearbadge">2025</div></div>
-      <div class="body">
-        <div class="title">Yamaha YZF-R1 60th Anniversary</div>
-        <div class="price offer">Price on request</div>
-        <div class="specs"><span class="chip km">0 km</span><span class="chip note">Anniversary edition</span></div>
-        <div class="note">As-new / delivery mileage &middot; Hilversum.</div>
-        <span class="link">View on Marktplaats</span>
-      </div>
-    </a>
-
-  </div>
-
-  <footer>
-    Updated automatically each day at 18:30. Year and mileage are verified from each listing's detail page.<br>
-    Source: <a href="https://www.marktplaats.nl/l/motoren/q/yamaha+r1/" target="_blank" rel="noopener">Marktplaats &mdash; Yamaha R1 search</a>.
-  </footer>
+<header><h1>Yamaha R1 — Active listings</h1>
+<div class="criteria">2015 or newer · under 30,000 km · all of the Netherlands · source: Marktplaats</div></header>
+<div class="metabar">
+<div class="count"><span class="num">13</span> matching listings</div>
+<div class="sortpill">Sorted: cheapest first</div>
+<div class="updated">Updated 29 May 2026</div>
 </div>
-</body>
-</html>
+<div class="grid"><a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2388721539-yamaha-yzf-r1-bj-2017" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2017 Yamaha YZF-R1 (bj 2017)" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/950399cf-c6ed-4698-a1a8-9c9cf3731f57?rule=ecg_mp_eps$_83"><div class="yearbadge">2017</div></div>
+  <div class="body">
+    <div class="title">Yamaha YZF-R1 (bj 2017)</div>
+    <div class="price">€ 15.750</div>
+    <div class="specs"><span class="chip km">29,156 km</span></div>
+    <div class="note">Near 30,000 km limit</div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2393015933-yamaha-yzf-r1-2020" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2020 Yamaha YZF-R1 2020" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/ed8abac4-4f86-47c7-857f-4c2dc3fbfd6b?rule=ecg_mp_eps$_83"><div class="yearbadge">2020</div></div>
+  <div class="body">
+    <div class="title">Yamaha YZF-R1 2020</div>
+    <div class="price">€ 17.500</div>
+    <div class="specs"><span class="chip km">20,200 km</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2353040485-yamaha-r1-yzf-r1-rn49-2019-kenteken-circuit-10000km" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2019 Yamaha R1 RN49 2019 — Circuit" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/86df1d90-20d2-43f0-aaef-3ff64dd122cd?rule=ecg_mp_eps$_83"><div class="yearbadge">2019</div></div>
+  <div class="body">
+    <div class="title">Yamaha R1 RN49 2019 — Circuit</div>
+    <div class="price">€ 17.900</div>
+    <div class="specs"><span class="chip km">10,288 km</span><span class="chip note">Circuit-registered</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2399979864-yamaha-yzf-r1" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2019 Yamaha YZF-R1" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/fc794c26-0d10-4faf-b47e-1b1ca5e5ad7b?rule=ecg_mp_eps$_83"><div class="yearbadge">2019</div></div>
+  <div class="body">
+    <div class="title">Yamaha YZF-R1</div>
+    <div class="price">€ 18.995</div>
+    <div class="specs"><span class="chip km">14,515 km</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2396373435-yamaha-yzf-1000-r-bj-2020-3-612-km" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2020 Yamaha YZF-R1 (bj 2020)" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d0bf56f2-eb6f-4719-a6bf-ccd12fb46619?rule=ecg_mp_eps$_83"><div class="yearbadge">2020</div></div>
+  <div class="body">
+    <div class="title">Yamaha YZF-R1 (bj 2020)</div>
+    <div class="price">€ 19.950</div>
+    <div class="specs"><span class="chip km">3,612 km</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2396832265-yamaha-yzf-r1-bj-2021-17-700-km-1e-eigenaar" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2021 Yamaha YZF-R1 (bj 2021) — 1e eigenaar" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/3b0ec373-d404-4ee4-ade1-85d1d0605a10?rule=ecg_mp_eps$_83"><div class="yearbadge">2021</div></div>
+  <div class="body">
+    <div class="title">Yamaha YZF-R1 (bj 2021) — 1e eigenaar</div>
+    <div class="price">€ 19.985</div>
+    <div class="specs"><span class="chip km">17,700 km</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2398736968-yamaha-yzf-r1m-r1-m-blipper-akrapovic-ohlins-r6-r7-r9" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2015 Yamaha YZF-R1M — Akrapovič / Öhlins" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/7c55688c-e981-465c-bc6c-103134c1cd53?rule=ecg_mp_eps$_83"><div class="yearbadge">2015</div></div>
+  <div class="body">
+    <div class="title">Yamaha YZF-R1M — Akrapovič / Öhlins</div>
+    <div class="price">€ 19.988</div>
+    <div class="specs"><span class="chip km">22,337 km</span><span class="chip note">R1M variant</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2398748757-yamaha-yzf-r1-bj-2019" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2019 Yamaha YZF-R1 (bj 2019)" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c760396e-67b3-423a-a799-409f58053fb2?rule=ecg_mp_eps$_83"><div class="yearbadge">2019</div></div>
+  <div class="body">
+    <div class="title">Yamaha YZF-R1 (bj 2019)</div>
+    <div class="price">€ 19.990</div>
+    <div class="specs"><span class="chip km">3,242 km</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2398172694-yamaha-r1-2024-21dkm" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2024 Yamaha R1 2024" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/4b66bc5b-4cfe-475b-9e91-f9d988d843d9?rule=ecg_mp_eps$_83"><div class="yearbadge">2024</div></div>
+  <div class="body">
+    <div class="title">Yamaha R1 2024</div>
+    <div class="price">€ 20.499</div>
+    <div class="specs"><span class="chip km">21,000 km</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2396532668-yamaha-yzf-r1-2024" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2024 Yamaha YZF-R1 (2024)" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/f69e1705-8911-4a71-9a17-f267d66568fb?rule=ecg_mp_eps$_83"><div class="yearbadge">2024</div></div>
+  <div class="body">
+    <div class="title">Yamaha YZF-R1 (2024)</div>
+    <div class="price">€ 21.499</div>
+    <div class="specs"><span class="chip km">7,026 km</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2395936381-yamaha-yzf-r1-60th-anniversary-bj-2024" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2024 Yamaha YZF-R1 60th Anniversary (2024)" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/77eda28e-0b41-4832-9e52-1cb7ce3a76d7?rule=ecg_mp_eps$_83"><div class="yearbadge">2024</div></div>
+  <div class="body">
+    <div class="title">Yamaha YZF-R1 60th Anniversary (2024)</div>
+    <div class="price">€ 22.990</div>
+    <div class="specs"><span class="chip km">11,633 km</span><span class="chip note">Anniversary edition</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2403152319-yamaha-r1-60th-anniversary" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2025 Yamaha R1 60th Anniversary" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/b7fb0d89-f7f1-4b17-a3ad-25ec6d7c2a18?rule=ecg_mp_eps$_83"><div class="yearbadge">2025</div></div>
+  <div class="body">
+    <div class="title">Yamaha R1 60th Anniversary</div>
+    <div class="price">€ 24.895</div>
+    <div class="specs"><span class="chip km">25 km</span><span class="chip note">Anniversary edition</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a>
+<a class="card" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2395792378-yamaha-r1-1ste-eig-nl-motor-garantie-t-m-2030" target="_blank" rel="noopener">
+  <div class="imgwrap"><img loading="lazy" alt="2025 Yamaha R1 — 1e eigenaar, NL motor" src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/29ffa46a-e122-4677-b15b-ef3f021cd473?rule=ecg_mp_eps$_83"><div class="yearbadge">2025</div></div>
+  <div class="body">
+    <div class="title">Yamaha R1 — 1e eigenaar, NL motor</div>
+    <div class="price offer">Bieden</div>
+    <div class="specs"><span class="chip km">5,993 km</span></div>
+    <div class="note"></div>
+    <span class="link">View on Marktplaats</span>
+  </div>
+</a></div>
+<footer>Updated automatically each day at 18:30. Year and mileage are verified from each listing's detail page.<br>
+Source: <a href="https://www.marktplaats.nl/l/motoren/q/yamaha+r1/" target="_blank" rel="noopener">Marktplaats — Yamaha R1 search</a>.</footer>
+</div></body></html>
