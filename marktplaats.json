@@ -1,6 +1,6 @@
 {
-  "updated": "4 Jun 2026, 21:34",
-  "count": 1,
+  "updated": "6 Jun 2026, 21:38",
+  "count": 3,
   "listings": [
     {
       "id": "m2399979864",
@@ -16,6 +16,36 @@
       "isR1M": false,
       "isAnniversary": false,
       "note": "LDK automotive, Almere"
+    },
+    {
+      "id": "m2407189603",
+      "href": "/v/motoren/motoren-yamaha/m2407189603-yamaha-yzf-r1-bj-2020",
+      "title": "Yamaha YZF R1 (bj 2020)",
+      "year": 2020,
+      "km": 31173,
+      "kmFormatted": "31,173",
+      "priceEuros": 18999,
+      "priceFormatted": "€ 18.999",
+      "isOffer": false,
+      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/0fc4dde6-f8b2-4e48-8b9e-5a11756d8f10?rule=ecg_mp_eps$_83",
+      "isR1M": false,
+      "isAnniversary": false,
+      "note": ""
+    },
+    {
+      "id": "m2407865168",
+      "href": "/v/motoren/motoren-yamaha/m2407865168-yamaha-yzf-r1-bj-2021",
+      "title": "YAMAHA YZF R1 (bj 2021)",
+      "year": 2021,
+      "km": 13951,
+      "kmFormatted": "13,951",
+      "priceEuros": 19995,
+      "priceFormatted": "€ 19.995",
+      "isOffer": false,
+      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/6ee51eda-d5a1-48ff-a1be-733b42f9a610?rule=ecg_mp_eps$_83",
+      "isR1M": false,
+      "isAnniversary": false,
+      "note": ""
     }
   ]
 }
