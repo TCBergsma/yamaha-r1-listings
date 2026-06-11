@@ -1,22 +1,7 @@
 {
-  "updated": "10 Jun 2026, 20:50",
-  "count": 3,
+  "updated": "11 Jun 2026, 19:11",
+  "count": 1,
   "listings": [
-    {
-      "id": "m2409176417",
-      "href": "/v/motoren/motoren-yamaha/m2409176417-yamaha-r1-220pk-custom-british-racing-green",
-      "title": "Yamaha R1 220PK custom british racing green",
-      "year": 2016,
-      "km": 33800,
-      "kmFormatted": "33,800",
-      "priceEuros": 17950,
-      "priceFormatted": "€ 17.950",
-      "isOffer": false,
-      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/98530370-773e-40b2-a25b-6001ca603618?rule=ecg_mp_eps$_83",
-      "isR1M": false,
-      "isAnniversary": false,
-      "note": "Sittard · custom 220 hp build · km close to the 35,000 limit"
-    },
     {
       "id": "m2399979864",
       "href": "/v/motoren/motoren-yamaha/m2399979864-yamaha-yzf-r1",
@@ -31,21 +16,6 @@
       "isR1M": false,
       "isAnniversary": false,
       "note": "Almere · dealer ad (LDK Automotive)"
-    },
-    {
-      "id": "m2407189603",
-      "href": "/v/motoren/motoren-yamaha/m2407189603-yamaha-yzf-r1-bj-2020",
-      "title": "Yamaha YZF R1 (bj 2020)",
-      "year": 2020,
-      "km": 31173,
-      "kmFormatted": "31,173",
-      "priceEuros": 18999,
-      "priceFormatted": "€ 18.999",
-      "isOffer": false,
-      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/0fc4dde6-f8b2-4e48-8b9e-5a11756d8f10?rule=ecg_mp_eps$_83",
-      "isR1M": false,
-      "isAnniversary": false,
-      "note": "Veldhoven · ad is live but did not appear in today's search results"
     }
   ]
 }
