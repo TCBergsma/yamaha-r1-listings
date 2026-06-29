@@ -1,11 +1,11 @@
 {
-  "updated": "25 Jun 2026, 22:21",
+  "updated": "29 Jun 2026, 21:27",
   "count": 13,
   "listings": [
     {
       "id": "m2388721539",
       "href": "/v/motoren/motoren-yamaha/m2388721539-yamaha-yzf-r1-bj-2017",
-      "title": "Yamaha YZF R1 (bj 2017)",
+      "title": "YAMAHA YZF R1 (bj 2017)",
       "year": 2017,
       "km": 29156,
       "kmFormatted": "29,156",
@@ -16,6 +16,21 @@
       "isR1M": false,
       "isAnniversary": false,
       "note": "Almere"
+    },
+    {
+      "id": "m2353040485",
+      "href": "/v/motoren/motoren-yamaha/m2353040485-yamaha-r1-yzf-r1-rn49-2019-kenteken-circuit-10000km",
+      "title": "YAMAHA R1 YZF R1 RN49 2019 - Kenteken Circuit 10000km",
+      "year": 2019,
+      "km": 10288,
+      "kmFormatted": "10,288",
+      "priceEuros": 16500,
+      "priceFormatted": "€ 16.500",
+      "isOffer": false,
+      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/32450d9c-07ff-4ec2-9e93-2b6d163404f1?rule=ecg_mp_eps$_83",
+      "isR1M": false,
+      "isAnniversary": false,
+      "note": "Winschoten"
     },
     {
       "id": "m2412984925",
@@ -33,21 +48,6 @@
       "note": "Zwartsluis · near km limit (34,834)"
     },
     {
-      "id": "m2353040485",
-      "href": "/v/motoren/motoren-yamaha/m2353040485-yamaha-r1-yzf-r1-rn49-2019-kenteken-circuit-10000km",
-      "title": "Yamaha R1 YZF R1 RN49 2019 - Kenteken Circuit",
-      "year": 2019,
-      "km": 10288,
-      "kmFormatted": "10,288",
-      "priceEuros": 16900,
-      "priceFormatted": "€ 16.900",
-      "isOffer": false,
-      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/78/78137ea8-036a-40e1-9bfc-744592516655?rule=ecg_mp_eps$_83",
-      "isR1M": false,
-      "isAnniversary": false,
-      "note": "Winschoten · circuit bike with kenteken"
-    },
-    {
       "id": "m2411339859",
       "href": "/v/motoren/motoren-yamaha/m2411339859-yamaha-yzf-r1-bj-2016",
       "title": "Yamaha YZF-R1 (bj 2016)",
@@ -60,12 +60,12 @@
       "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/51c6aced-3b2a-4d70-8c50-485102a115f9?rule=ecg_mp_eps$_83",
       "isR1M": false,
       "isAnniversary": false,
-      "note": "Drachten · minimum bid"
+      "note": "Drachten"
     },
     {
       "id": "m2414039556",
       "href": "/v/motoren/motoren-yamaha/m2414039556-yamaha-yzf-r1-blue-edition-topper-bj-2019",
-      "title": "Yamaha YZF R1 BLUE-EDITION TOPPER (bj 2019)",
+      "title": "Yamaha YZF R1 BLUE-EDITION! TOPPER! (bj 2019)",
       "year": 2019,
       "km": 29900,
       "kmFormatted": "29,900",
@@ -80,7 +80,7 @@
     {
       "id": "m2409176417",
       "href": "/v/motoren/motoren-yamaha/m2409176417-yamaha-r1-220pk-custom-british-racing-green",
-      "title": "Yamaha R1 220PK custom British Racing Green",
+      "title": "Yamaha R1 220PK custom british racing green",
       "year": 2016,
       "km": 33800,
       "kmFormatted": "33,800",
@@ -120,12 +120,12 @@
       "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/0fc4dde6-f8b2-4e48-8b9e-5a11756d8f10?rule=ecg_mp_eps$_83",
       "isR1M": false,
       "isAnniversary": false,
-      "note": "Veldhoven · minimum bid"
+      "note": "Veldhoven · near km limit (31,173)"
     },
     {
       "id": "m2409902067",
       "href": "/v/motoren/motoren-yamaha/m2409902067-yamaha-yzf-r1-bj-2020",
-      "title": "Yamaha YZF R1 (bj 2020)",
+      "title": "YAMAHA YZF R1 (bj 2020)",
       "year": 2020,
       "km": 14000,
       "kmFormatted": "14,000",
@@ -135,12 +135,12 @@
       "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/7ae03760-0dc4-4154-bb65-323c65056ad1?rule=ecg_mp_eps$_83",
       "isR1M": false,
       "isAnniversary": false,
-      "note": "Tubbergen · minimum bid"
+      "note": "Tubbergen"
     },
     {
       "id": "m2408875420",
       "href": "/v/motoren/motoren-yamaha/m2408875420-yamaha-yzf-r1-bj-2021-17-700-km-incl-onderh-historie",
-      "title": "Yamaha YZF R1 (bj 2021) ~17.700 km incl. onderhoudshistorie",
+      "title": "YAMAHA YZF R1 (bj 2021) +- 17.700 km incl.onderh.historie",
       "year": 2021,
       "km": 17700,
       "kmFormatted": "17,700",
@@ -150,7 +150,7 @@
       "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/080b1d90-d805-40b3-a2a2-14ccb78f608b?rule=ecg_mp_eps$_83",
       "isR1M": false,
       "isAnniversary": false,
-      "note": "Hapert · minimum bid"
+      "note": "Hapert"
     },
     {
       "id": "m2409387932",
@@ -180,7 +180,7 @@
       "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/eea647cb-a728-4c72-a7a9-d5e4771649f6?rule=ecg_mp_eps$_83",
       "isR1M": false,
       "isAnniversary": true,
-      "note": "Havelte · 60th Anniversary edition"
+      "note": "Havelte"
     },
     {
       "id": "m2413838285",
@@ -195,7 +195,7 @@
       "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/5899cde0-5ed5-4fbc-b7a8-22d3af9e8fb9?rule=ecg_mp_eps$_83",
       "isR1M": false,
       "isAnniversary": true,
-      "note": "Dirksland · 60th Anniversary edition · 25 km"
+      "note": "Dirksland"
     }
   ]
 }
