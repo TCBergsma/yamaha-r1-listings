@@ -1,5 +1,5 @@
 {
-  "updated": "29 Jun 2026, 21:27",
+  "updated": "1 Jul 2026, 18:22",
   "count": 13,
   "listings": [
     {
@@ -42,7 +42,7 @@
       "priceEuros": 16550,
       "priceFormatted": "€ 16.550",
       "isOffer": false,
-      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/92f3a9c9-9b8a-4152-b633-61a7132d1219?rule=ecg_mp_eps$_83",
+      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/92f3a9c9-9b8a-4152-b633-61a7132d1000?rule=ecg_mp_eps$_83",
       "isR1M": false,
       "isAnniversary": false,
       "note": "Zwartsluis · near km limit (34,834)"
@@ -61,21 +61,6 @@
       "isR1M": false,
       "isAnniversary": false,
       "note": "Drachten"
-    },
-    {
-      "id": "m2414039556",
-      "href": "/v/motoren/motoren-yamaha/m2414039556-yamaha-yzf-r1-blue-edition-topper-bj-2019",
-      "title": "Yamaha YZF R1 BLUE-EDITION! TOPPER! (bj 2019)",
-      "year": 2019,
-      "km": 29900,
-      "kmFormatted": "29,900",
-      "priceEuros": 17950,
-      "priceFormatted": "€ 17.950",
-      "isOffer": false,
-      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/6e548dc0-0c8d-4f6e-ae74-a9742b8a1480?rule=ecg_mp_eps$_83",
-      "isR1M": false,
-      "isAnniversary": false,
-      "note": "Hoogeveen"
     },
     {
       "id": "m2409176417",
@@ -123,19 +108,19 @@
       "note": "Veldhoven · near km limit (31,173)"
     },
     {
-      "id": "m2409902067",
-      "href": "/v/motoren/motoren-yamaha/m2409902067-yamaha-yzf-r1-bj-2020",
-      "title": "YAMAHA YZF R1 (bj 2020)",
-      "year": 2020,
-      "km": 14000,
-      "kmFormatted": "14,000",
+      "id": "m2415091314",
+      "href": "/v/motoren/motoren-yamaha/m2415091314-yamaha-r1m-2018",
+      "title": "Yamaha R1M 2018",
+      "year": 2018,
+      "km": 20932,
+      "kmFormatted": "20,932",
       "priceEuros": 19950,
       "priceFormatted": "€ 19.950",
       "isOffer": false,
-      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/7ae03760-0dc4-4154-bb65-323c65056ad1?rule=ecg_mp_eps$_83",
-      "isR1M": false,
+      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c17e9582-4a65-4768-bdf9-a113045eb432?rule=ecg_mp_eps$_83",
+      "isR1M": true,
       "isAnniversary": false,
-      "note": "Tubbergen"
+      "note": "Reusel"
     },
     {
       "id": "m2408875420",
@@ -151,6 +136,21 @@
       "isR1M": false,
       "isAnniversary": false,
       "note": "Hapert"
+    },
+    {
+      "id": "m2411008676",
+      "href": "/v/motoren/motoren-yamaha/m2411008676-yamaha-yzf-r1m-r1-m-blipper-akrapovic-ohlins-r6-r7-r9",
+      "title": "Yamaha YZF R1M Blipper Akrapovic Öhlins R6 R7 R9",
+      "year": 2015,
+      "km": 22337,
+      "kmFormatted": "22,337",
+      "priceEuros": 19988,
+      "priceFormatted": "€ 19.988",
+      "isOffer": false,
+      "img": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/06b0c0e8-0f5f-4048-b760-3343a0d91cc8?rule=ecg_mp_eps$_83",
+      "isR1M": true,
+      "isAnniversary": false,
+      "note": "Tilburg · dealer T.D.K. Exclusive"
     },
     {
       "id": "m2409387932",
