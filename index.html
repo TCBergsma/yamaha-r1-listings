@@ -75,6 +75,9 @@ footer a { color: #57534e; }
     <button class="tab" data-tab="be" onclick="switchTab('be')">
       <span class="tab-flag">🇧🇪</span>2dehands.be
     </button>
+    <button class="tab" data-tab="as" onclick="switchTab('as')">
+      <span class="tab-flag">🇪🇺</span>AutoScout24
+    </button>
   </div>
 
   <!-- Marktplaats panel -->
@@ -107,13 +110,24 @@ footer a { color: #57534e; }
     <div class="grid" id="be-grid"><div class="loading">Loading 2dehands.be listings…</div></div>
   </div>
 
+  <!-- AutoScout24 panel -->
+  <div class="panel" id="panel-as">
+    <div class="metabar">
+      <div class="count"><span class="num" id="as-count">–</span> matching listings</div>
+      <div class="sortpill">Sorted: cheapest first</div>
+      <div class="updated" id="as-updated">Loading…</div>
+    </div>
+    <div class="grid" id="as-grid"><div class="loading">Loading AutoScout24 listings…</div></div>
+  </div>
+
   <footer>
     Updated automatically each day. Year and mileage are verified from each listing's detail page.<br>
     mobile.de results limited to listings within ~5–6 hours' drive from Leiden, Netherlands.<br>
     Sources:
     <a href="https://www.marktplaats.nl/l/motoren/q/yamaha+r1/" target="_blank" rel="noopener">Marktplaats</a> &middot;
     <a href="https://suchen.mobile.de/fahrzeuge/search.html?p=10000&s=Motorbike&vc=Motorbike&fr=1-2015&ms=26000%3B%3B%3BR1" target="_blank" rel="noopener">mobile.de</a> &middot;
-    <a href="https://www.2dehands.be/l/motoren/motoren-yamaha/q/r1/" target="_blank" rel="noopener">2dehands.be</a>
+    <a href="https://www.2dehands.be/l/motoren/motoren-yamaha/q/r1/" target="_blank" rel="noopener">2dehands.be</a> &middot;
+    <a href="https://www.autoscout24.com/lst-moto/yamaha/yzf-r1?atype=B&fregfrom=2015&kmto=35000&cy=NL%2CB%2CD%2CF" target="_blank" rel="noopener">AutoScout24</a>
   </footer>
 </div>
 
@@ -193,6 +207,26 @@ function buildBeCard(l) {
 </a>`;
 }
 
+function buildAsCard(l) {
+  const priceClass = l.isOffer ? ' offer' : '';
+  const priceHtml = fmtPrice(l);
+  const r1mChip = l.isR1M ? '<span class="chip note">R1M variant</span>' : '';
+  const locChip = l.location ? `<span class="chip loc">${escHtml(l.location)}</span>` : '';
+  const imgHtml = l.img
+    ? `<img loading="lazy" alt="${l.year} ${escHtml(l.title)}" src="${escHtml(l.img)}">`
+    : '';
+  return `<a class="card" href="${escHtml(l.href)}" target="_blank" rel="noopener">
+  <div class="imgwrap">${imgHtml}<div class="yearbadge">${l.year}</div></div>
+  <div class="body">
+    <div class="title">${escHtml(l.title)}</div>
+    <div class="price${priceClass}">${escHtml(priceHtml)}</div>
+    <div class="specs"><span class="chip km">${escHtml(l.kmFormatted)} km</span>${locChip}${r1mChip}</div>
+    <div class="note">${escHtml(l.note || '')}</div>
+    <span class="link">View on AutoScout24</span>
+  </div>
+</a>`;
+}
+
 function escHtml(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
@@ -223,5 +257,6 @@ const BASE = 'https://tcbergsma.github.io/yamaha-r1-listings/';
 loadSource(BASE + 'marktplaats.json', 'mp-count', 'mp-updated', 'mp-grid', buildMpCard);
 loadSource(BASE + 'mobile.json',      'md-count', 'md-updated', 'md-grid', buildMdCard);
 loadSource(BASE + '2dehands.json',    'be-count', 'be-updated', 'be-grid', buildBeCard);
+loadSource(BASE + 'autoscout24.json', 'as-count', 'as-updated', 'as-grid', buildAsCard);
 </script>
 </body></html>
