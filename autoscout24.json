@@ -1,6 +1,6 @@
 {
-  "updated": "1 Jul 2026, 21:14",
-  "count": 20,
+  "updated": "8 Jul 2026, 23:26",
+  "count": 21,
   "listings": [
     {
       "id": "b4723ab2-f149-45e9-aa32-0a6b94fbc8ef",
@@ -113,6 +113,22 @@
       "location": "Meise, Belgium",
       "country": "BE",
       "note": "Meise · Belgium"
+    },
+    {
+      "id": "6228c79b-ccc8-4a3e-a458-bf6d8b8d0d49",
+      "href": "https://www.autoscout24.com/offers/yamaha-yzf-r1-black-cat_ma50107mo51484-6228c79b-ccc8-4a3e-a458-bf6d8b8d0d49",
+      "title": "Yamaha YZF-R1",
+      "year": 2017,
+      "km": 32537,
+      "kmFormatted": "32,537",
+      "priceEuros": 16990,
+      "priceFormatted": "€ 16.990",
+      "isOffer": false,
+      "img": "https://prod.pictures.autoscout24.net/listing-images/6228c79b-ccc8-4a3e-a458-bf6d8b8d0d49_ef698895-6caa-4782-ad9f-b5ac124f08b3.jpg/250x188.webp",
+      "isR1M": false,
+      "location": "ASSEN, Netherlands",
+      "country": "NL",
+      "note": "ASSEN · Netherlands"
     },
     {
       "id": "8a23bcbe-a79c-4bda-946a-6f68b78424b6",
@@ -252,7 +268,7 @@
       "priceEuros": 22999,
       "priceFormatted": "€ 22.999",
       "isOffer": false,
-      "img": "https://prod.pictures.autoscout24.net/listing-images/6ae089f2-aeaa-4f65-a968-4dcdcc57cef9_a50ad4f8-651f-417e-b812-0c73b4e354a4.jpg/250x188.webp",
+      "img": "https://prod.pictures.autoscout24.net/listing-images/6ae089f2-aeaa-4f65-a968-4dcdcc57cef9_7ba49380-18a0-4d83-9fd8-c6f23d23782d.jpg/250x188.webp",
       "isR1M": false,
       "location": "Tornesch, Stadt, Schleswig-Holstein, Germany",
       "country": "DE",
@@ -275,6 +291,22 @@
       "note": "Zonhoven · Belgium"
     },
     {
+      "id": "3bd004a4-a2e2-42a8-930e-6ac621f5902b",
+      "href": "https://www.autoscout24.com/offers/yamaha-yzf-r1-m-gasoline-cat_ma50107mo51484-3bd004a4-a2e2-42a8-930e-6ac621f5902b",
+      "title": "Yamaha YZF-R1",
+      "year": 2024,
+      "km": 950,
+      "kmFormatted": "950",
+      "priceEuros": 26500,
+      "priceFormatted": "€ 26.500",
+      "isOffer": false,
+      "img": "https://prod.pictures.autoscout24.net/listing-images/3bd004a4-a2e2-42a8-930e-6ac621f5902b_66d68d33-fca1-4177-a906-10c6ce5f9f26.jpg/250x188.webp",
+      "isR1M": false,
+      "location": "mouscron , Belgium",
+      "country": "BE",
+      "note": "mouscron  · Belgium"
+    },
+    {
       "id": "c7f57bf0-566a-412e-a883-c61120e69067",
       "href": "https://www.autoscout24.com/offers/yamaha-yzf-r1-gasoline-black-cat_ma50107mo51484-c7f57bf0-566a-412e-a883-c61120e69067",
       "title": "Yamaha YZF-R1",
@@ -289,22 +321,6 @@
       "location": "Kürten, Nordrhein-Westfalen, Germany",
       "country": "DE",
       "note": "Kürten · NRW, Germany"
-    },
-    {
-      "id": "3bd004a4-a2e2-42a8-930e-6ac621f5902b",
-      "href": "https://www.autoscout24.com/offers/yamaha-yzf-r1-m-gasoline-cat_ma50107mo51484-3bd004a4-a2e2-42a8-930e-6ac621f5902b",
-      "title": "Yamaha YZF-R1",
-      "year": 2024,
-      "km": 650,
-      "kmFormatted": "650",
-      "priceEuros": 27370,
-      "priceFormatted": "€ 27.370",
-      "isOffer": false,
-      "img": "https://prod.pictures.autoscout24.net/listing-images/3bd004a4-a2e2-42a8-930e-6ac621f5902b_66d68d33-fca1-4177-a906-10c6ce5f9f26.jpg/250x188.webp",
-      "isR1M": false,
-      "location": "mouscron , Belgium",
-      "country": "BE",
-      "note": "mouscron  · Belgium"
     },
     {
       "id": "745b1859-f3e1-49d1-973a-f4ea9a95e9d4",
